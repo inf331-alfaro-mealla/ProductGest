@@ -22,7 +22,7 @@ ProductGest es una aplicación sencilla para la gestión de inventarios, diseña
 1. Inicia la aplicación:
    - Para Python:
      ```
-     python productGest.py
+     python main.py
      ```
 2. Inicia sesión utilizando tu nombre de usuario y contraseña registrados.
 3. Accede al panel de control para gestionar productos, buscar, filtrar, y generar reportes de inventario.
