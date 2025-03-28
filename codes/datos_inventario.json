@@ -1,0 +1,66 @@
+[
+    {
+        "sku": "TEC-001",
+        "nombre": "Notebook ASUS VivoBook",
+        "descripcion": "Laptop 15.6'' Ryzen 5, 8GB RAM, SSD 512GB",
+        "cantidad": 8,
+        "precio": 489990,
+        "categoria": "Electronica"
+    },
+    {
+        "sku": "TEC-002",
+        "nombre": "Monitor LG 24'' Full HD",
+        "descripcion": "Monitor IPS con tasa de refresco de 75Hz",
+        "cantidad": 9,
+        "precio": 99990,
+        "categoria": "Electronica"
+    },
+    {
+        "sku": "TEC-003",
+        "nombre": "Teclado Mec\u00c3\u00a1nico Redragon",
+        "descripcion": "Teclado RGB switch blue con dise\u00c3\u00b1o compacto",
+        "cantidad": 15,
+        "precio": 45990,
+        "categoria": "Periferico"
+    },
+    {
+        "sku": "TEC-004",
+        "nombre": "Mouse Logitech G203",
+        "descripcion": "Mouse gamer con sensor de alta precisi\u00c3\u00b3n",
+        "cantidad": 20,
+        "precio": 22990,
+        "categoria": "Periferico"
+    },
+    {
+        "sku": "TEC-005",
+        "nombre": "Aud\u00c3\u00adfonos JBL Tune 510BT",
+        "descripcion": "Aud\u00c3\u00adfonos bluetooth con micr\u00c3\u00b3fono integrado",
+        "cantidad": 12,
+        "precio": 39990,
+        "categoria": "Electronica"
+    },
+    {
+        "sku": "TEC-006",
+        "nombre": "Micr\u00c3\u00b3fono Fifine K669B",
+        "descripcion": "Micr\u00c3\u00b3fono USB cardioide para streaming",
+        "cantidad": 9,
+        "precio": 34990,
+        "categoria": "Electronica"
+    },
+    {
+        "sku": "TEC-007",
+        "nombre": "Mousepad Corsair MM300",
+        "descripcion": "Alfombrilla extendida con superficie de precisi\u00c3\u00b3n",
+        "cantidad": 18,
+        "precio": 19990,
+        "categoria": "Accesorios"
+    },
+    {
+        "sku": "TEC-008",
+        "nombre": "Smartphone Xiaomi Redmi Note 12",
+        "descripcion": "Celular con pantalla AMOLED 6.67'' y 128GB",
+        "cantidad": 6,
+        "precio": 179990,
+        "categoria": "Telefonos"
+    }
+]
