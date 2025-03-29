@@ -17,8 +17,8 @@
     },
     {
         "sku": "TEC-003",
-        "nombre": "Teclado Mec\u00c3\u00a1nico Redragon",
-        "descripcion": "Teclado RGB switch blue con dise\u00c3\u00b1o compacto",
+        "nombre": "Teclado Mecanico Redragon",
+        "descripcion": "Teclado RGB switch blue con diseno compacto",
         "cantidad": 15,
         "precio": 45990,
         "categoria": "Periferico"
@@ -26,23 +26,23 @@
     {
         "sku": "TEC-004",
         "nombre": "Mouse Logitech G203",
-        "descripcion": "Mouse gamer con sensor de alta precisi\u00c3\u00b3n",
+        "descripcion": "Mouse gamer con sensor de alta precision",
         "cantidad": 20,
         "precio": 22990,
         "categoria": "Periferico"
     },
     {
         "sku": "TEC-005",
-        "nombre": "Aud\u00c3\u00adfonos JBL Tune 510BT",
-        "descripcion": "Aud\u00c3\u00adfonos bluetooth con micr\u00c3\u00b3fono integrado",
+        "nombre": "Audifonos JBL Tune 510BT",
+        "descripcion": "Audifonos bluetooth con microfono integrado",
         "cantidad": 12,
         "precio": 39990,
         "categoria": "Electronica"
     },
     {
         "sku": "TEC-006",
-        "nombre": "Micr\u00c3\u00b3fono Fifine K669B",
-        "descripcion": "Micr\u00c3\u00b3fono USB cardioide para streaming",
+        "nombre": "Micrifono Fifine K669B",
+        "descripcion": "Microfono USB cardioide para streaming",
         "cantidad": 9,
         "precio": 34990,
         "categoria": "Electronica"
@@ -50,7 +50,7 @@
     {
         "sku": "TEC-007",
         "nombre": "Mousepad Corsair MM300",
-        "descripcion": "Alfombrilla extendida con superficie de precisi\u00c3\u00b3n",
+        "descripcion": "Alfombrilla extendida con superficie de precision",
         "cantidad": 18,
         "precio": 19990,
         "categoria": "Accesorios"
