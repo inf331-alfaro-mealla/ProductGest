@@ -21,7 +21,7 @@
         "descripcion": "Teclado RGB switch blue con diseno compacto",
         "cantidad": 15,
         "precio": 45990,
-        "categoria": "Periferico"
+        "categoria": "Perifericos"
     },
     {
         "sku": "TEC-004",
@@ -29,7 +29,7 @@
         "descripcion": "Mouse gamer con sensor de alta precision",
         "cantidad": 20,
         "precio": 22990,
-        "categoria": "Periferico"
+        "categoria": "Perifericos"
     },
     {
         "sku": "TEC-005",
