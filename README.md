@@ -166,6 +166,32 @@ Más adelante, se creó un **pull request** desde `develop` hacia `main` para co
 
 Este flujo de trabajo, aunque simple, fue efectivo para la magnitud del proyecto y permitió mantener una trazabilidad clara de cada avance.
 
+---
+
+### 🧩 5. Capturas de GitHub y Slack
+
+A continuación, dejamos evidencia visual del trabajo realizado a lo largo del proyecto, incluyendo commits, pull requests, merges y planificación diaria en Slack.
+
+- [Ver imagen de actividad de commits](./evidencias/commits.png)
+- [Ver imagen del Pull Request de integración a main](./evidencias/pull-request.png)
+- [Ver imagen del Merge exitoso](./evidencias/merge.png)
+- [Ver imagen del canal Slack con organización diaria](./evidencias/slack.png)
+
+---
+
+### 🧩 6. Problemas encontrados y cómo se solucionaron
+
+Durante el desarrollo del proyecto, enfrentamos los siguientes desafíos:
+
+- **Integración con Slack:** Al principio no podíamos integrar Slack con GitHub usando nuestras cuentas @usm.cl. La solución fue crear una organización en Slack utilizando una cuenta @sansano.usm.cl, lo que nos permitió finalmente realizar la integración sin problemas.
+
+- **Disponibilidad de tiempo desigual:** Al tener diferencias en la disponibilidad horaria de cada integrante, se llegó a un acuerdo para que Giovanni se encargara del desarrollo inicial completo del sistema (y las pruebas del Ciclo 1), mientras Ignacio se encargó de la integración con GitHub, creación de ramas, documentación y la ejecución de su propio ciclo de pruebas. Mantuvimos comunicación constante para evitar trabajar sobre lo mismo.
+
+- **Problemas menores con validaciones:** En una primera versión del sistema, al intentar agregar productos con cantidad negativa o SKU repetido, el sistema no respondía como se esperaba. Se añadieron validaciones estrictas y mensajes de error claros para reforzar la robustez del sistema.
+
+- **Errores en el manejo de logs:** En algunos módulos no se registraban correctamente los eventos. Se solucionó asegurando el uso uniforme del módulo `logging` en todos los archivos del sistema (`main.py`, `inventario.py`, etc.).
+
+---
 
 
 ## Licencia
