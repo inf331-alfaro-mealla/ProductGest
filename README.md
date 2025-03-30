@@ -113,6 +113,60 @@ Planeamos registrar nuestras pruebas en [Greentest.ai](https://app.greentest.ai)
 
 Este enfoque de **validación + verificación** nos permitió construir un sistema ajustado al problema real y técnicamente correcto, con respaldo en pruebas y trazabilidad de decisiones.
 
+## 🧩 3. Organización del equipo y flujo de trabajo
+
+Desde el inicio del proyecto, organizamos nuestras tareas utilizando un documento colaborativo en Google Docs, donde planificamos día a día las actividades a realizar. Esta planificación comenzó el **domingo 23 de marzo** y se extendió hasta el sábado 29 de marzo, donde registramos tanto los objetivos generales como los acuerdos de equipo.
+
+Para las comunicaciones, usamos **WhatsApp** durante la primera semana, y desde el **30 de marzo** migramos a un canal en **Slack** llamado `#productgest`, el cual fue vinculado con GitHub para recibir notificaciones de commits, pull requests y merges.
+
+### División del trabajo
+
+- **Giovanni Mealla** se encargó de:
+  - Implementar la **primera versión funcional** del sistema completo en consola (versión 1.0).
+  - Hacer todos los **commits de desarrollo en la rama `main`**.
+  - Documentar diariamente los avances y **registrar los objetivos** en el documento de Google Docs.
+  - Ejecutar el **ciclo 1 de pruebas** sobre su propia versión funcional.
+  - Redactar las secciones de **validación, verificación y pruebas** del `README.md`.
+
+- **Ignacio Alfaro** se encargó de:
+  - Crear la **organización en GitHub**, la estructura inicial del repositorio y la rama `develop`.
+  - Integrar el repositorio con **Slack**.
+  - Trabajar en la edición del `README.md` en paralelo mientras Giovanni desarrollaba.
+  - Ejecutar su propio conjunto de **pruebas del ciclo 1** y coordinar la ejecución futura de pruebas cruzadas.
+  - Subir avances al repositorio y colaborar en los últimos ajustes del proyecto.
+
+La planificación diaria fue clave para mantenernos coordinados, y al estar organizada por fechas, permitió que ambos pudieran avanzar incluso en horarios distintos. Además, usamos mensajes fijados en Slack para establecer tareas prioritarias y mantener claridad sobre los pendientes diarios.
+
+---
+
+## 🧩 4. Flujo de trabajo y administración del código
+
+### Paradigma de ramas utilizado
+
+Utilizamos un **flujo simple basado en `main` y `develop`**:
+
+- `main`: rama principal donde se integró la **primera versión funcional** del programa, desarrollada por Giovanni.
+- `develop`: rama secundaria utilizada para trabajar colaborativamente el `README.md` y registrar evidencias como validación, verificación, pruebas y documentación.
+
+Más adelante, se creó un **pull request** desde `develop` hacia `main` para consolidar toda la documentación y los avances en un solo lugar.
+
+### Protección y buenas prácticas
+
+- Aunque **no se activó protección estricta de ramas** en GitHub, aplicamos buenas prácticas manuales:
+  - Toda la fase de documentación se trabajó en `develop`.
+  - Se hizo un **pull request con revisión manual** para integrar los cambios a `main`.
+  - Los commits se firmaron y acompañaron con mensajes claros.
+
+### Herramientas usadas
+
+- **Slack**: Coordinación diaria y objetivos de trabajo compartidos.
+- **Google Docs**: Planificación diaria y evidencia escrita de objetivos.
+- **GitHub**: Control de versiones, ramas y documentación del código.
+- **GreenTest.ai** *(pendiente)*: Para subir pruebas y obtener puntos adicionales.
+
+Este flujo de trabajo, aunque simple, fue efectivo para la magnitud del proyecto y permitió mantener una trazabilidad clara de cada avance.
+
+
 
 ## Licencia
 
