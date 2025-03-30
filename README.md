@@ -176,6 +176,9 @@ A continuación, dejamos evidencia visual del trabajo realizado a lo largo del p
 - [Ver imagen del Pull Request de integración a main](./evidencias/pull-request.png)
 - [Ver imagen del Merge exitoso](./evidencias/merge.png)
 - [Ver imagen del canal Slack con organización diaria](./evidencias/slack.png)
+- [Ver imagen de pruebas ciclo 1 Giovanni Mealla](./evidencias/ciclo1giovanni.png)
+- [Ver imagen de pruebas ciclo 1 Ignacio Alfaro](./evidencias/ciclo1ignacio.png)
+- [Ver imagen de la planificacion previa al slack en google docs](./evidencias/google-doc-plan.png)
 
 ---
 
