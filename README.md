@@ -42,80 +42,77 @@ ProductGest es una aplicación sencilla para la gestión de inventarios, diseña
 - Python 3.9 o superior
 - No se requieren librerías externas adicionales. El sistema funciona con módulos estándar de Python.
 
-## Validación y Verificación
+## ✅ Validación y Verificación
 
 ### 1. ¿Cómo especificamos mejor el requerimiento? (Validación)
 
-Desde el enfoque de **validación**, buscamos asegurar que el sistema responde realmente a las necesidades del cliente: un emprendedor que desea una solución **sencilla, funcional y práctica** para gestionar el inventario de su bodega.
+La **validación** consiste en asegurarnos de que el sistema que estamos construyendo **realmente resuelve el problema correcto**. Es decir, que los requisitos que definimos estén alineados con lo que el cliente necesita.
 
-Para lograrlo:
+Nos hicimos la siguiente pregunta clave:  
+> _¿Estamos resolviendo el problema correcto?_
 
-- **Levantamos dudas y ambigüedades** del enunciado original.
-- **Registramos acuerdos explícitos** en una tabla de validación (archivo Excel).
-- **Tomamos decisiones de diseño simples y consistentes** con las respuestas del profesor y los objetivos del proyecto.
+Para responderla, analizamos cuidadosamente el enunciado de la tarea y levantamos dudas que registramos como **indefiniciones**. A partir de esas preguntas, definimos acuerdos explícitos (en un Excel compartido) sobre cada punto. Esto nos permitió acotar el alcance y **establecer un requerimiento claro, completo y realista**, ajustado al contexto de un emprendedor que necesita una herramienta funcional y simple.
 
-#### Requerimiento Validado
+#### 📌 Requerimiento Validado
 
-- **Interfaz:** Sistema de consola, sin interfaz gráfica ni acceso web.
-- **Autenticación:** Solo login con un usuario administrador preconfigurado. No se implementa registro ni roles diferenciados.
-- **CRUD de Productos:** Cada producto tiene `SKU`, `nombre`, `descripción`, `cantidad`, `precio` y `categoría`. El `SKU` es único, y no se permiten duplicados por nombre en la misma categoría.
-- **Categorías:** Son predefinidas por el sistema y no se pueden modificar dinámicamente.
-- **Stock:** No se pueden registrar productos con stock 0. El stock se actualiza únicamente desde el CRUD.
-- **Filtrado y Búsqueda:** Solo se permite búsqueda simple por `nombre`, `categoría` y `precio máximo`.
-- **Reportes:** Generados bajo demanda desde un menú. Se muestran por consola e incluyen: total de productos, valor total del inventario, productos agotados, productos por categoría y los 5 más valiosos.
-- **Validación de datos:** Se validan todos los campos antes de guardar. No se permiten campos vacíos, precios negativos ni cantidades inválidas.
+- **Interfaz:** Solo por consola, sin interfaz web ni móvil.
+- **Usuarios:** Acceso exclusivo mediante un usuario administrador preconfigurado (sin registro ni roles).
+- **CRUD de Productos:** Cada producto debe tener `SKU` único, `nombre`, `descripción`, `cantidad`, `precio` y `categoría`. No se permiten duplicados por nombre/categoría.
+- **Categorías:** Son predefinidas por el sistema.
+- **Stock:** Solo puede modificarse desde las operaciones CRUD. No se pueden registrar productos con stock ≤ 0.
+- **Búsqueda:** Solo por nombre, categoría y precio máximo. No se permiten filtros avanzados.
+- **Reportes:** Bajo demanda, mostrados en consola. Incluyen total de productos, valor total del inventario, productos agotados, y resumen por categoría.
 
-Esta validación nos permitió **acotar correctamente el alcance**, definir reglas de negocio claras, y asegurar que la aplicación cumpla su propósito sin funcionalidades innecesarias o mal definidas.
+Validamos estos requisitos **contrastando lo que se pedía con la realidad del problema a resolver**, asegurándonos de que el sistema tenga sentido desde el punto de vista del cliente.
 
 ---
 
 ### 2. ¿Cómo nos aseguramos de que el programa cumple el requerimiento? (Verificación)
 
-Desde el enfoque de **verificación**, nos centramos en comprobar que el sistema se desarrolló tal como lo especificamos durante la validación. Es decir, que cada funcionalidad cumple con lo definido y que el comportamiento del programa es el esperado ante distintos escenarios.
+La **verificación** se enfoca en comprobar que el sistema se está desarrollando **de acuerdo a lo que se dijo que se iba a hacer**. En otras palabras, contrastamos el código real con los requerimientos especificados.
 
-#### Estrategias de Verificación Aplicadas
+Nos hicimos esta pregunta clave:  
+> _¿Estamos resolviendo correctamente el problema?_
+
+#### 🧪 Estrategias de Verificación Aplicadas
 
 **a) Diseño alineado con los acuerdos**  
-Estructuramos el sistema de forma modular y clara, según los acuerdos tomados como equipo. Cada funcionalidad (autenticación, CRUD, reportes, búsquedas) está contenida en un módulo propio, lo que facilita su verificación por separado.
+Modularizamos el código en archivos separados (`main.py`, `inventario.py`, `autenticacion.py`, etc.) para facilitar el control sobre cada parte del sistema. Esto nos permitió verificar funcionalidad por funcionalidad, sin ambigüedades.
 
 **b) Validaciones estrictas en código**  
-El sistema valida cada dato ingresado antes de ser guardado:
-
-- No se permiten campos vacíos ni datos con formato incorrecto.
-- El `SKU` debe ser único y seguir un formato alfanumérico.
-- El precio y la cantidad deben ser positivos.
+- Se verifica que los campos no estén vacíos ni tengan tipos inválidos.
+- El `SKU` debe seguir un formato alfanumérico válido y no repetirse.
+- El precio y la cantidad deben ser mayores a cero.
 
 **c) Manejo de errores y logs**  
-Usamos `try-except` para manejar excepciones en tiempo de ejecución y evitar caídas del programa.  
-Todos los eventos importantes se registran en el archivo `registro.log`, con distintos niveles (`INFO`, `WARNING`, `ERROR`), lo que permite realizar trazabilidad en caso de fallos.
+Manejamos errores mediante `try-except`, y usamos `logging` para registrar todos los eventos relevantes. Esto incluye inicios de sesión, intentos fallidos, errores de validación y operaciones exitosas.
 
 **d) Pruebas funcionales en consola**  
-Verificamos manualmente cada funcionalidad usando distintos tipos de entradas, tanto válidas como inválidas. Entre los casos probados se incluyen:
-
-- Inicio de sesión con credenciales correctas e incorrectas.
-- Intentos de agregar productos duplicados o con datos inválidos.
-- Actualización, eliminación y visualización de productos.
-- Búsquedas simples por nombre, categoría y precio.
-- Generación de reportes en diferentes escenarios.
+Cada funcionalidad fue probada con entradas válidas e inválidas. Verificamos login, CRUD, búsquedas y generación de reportes. Nos aseguramos de que los mensajes de error sean claros y que el programa no se caiga ante entradas incorrectas.
 
 **e) Registro estructurado de pruebas (Ciclo 1)**  
-Durante el primer ciclo de pruebas, cada integrante del equipo ejecutó casos de prueba individualmente. A continuación, se resumen algunos de los casos ejecutados por Giovanni Mealla el día **28-03-2025**, entre las 20:00 y las 20:30:
+Realizamos un ciclo de pruebas individuales. Aquí un resumen de las pruebas ejecutadas por Giovanni Mealla:
 
-| ID    | Entrada                                          | Resultado esperado                          | Resultado obtenido                               | Éxito/Fallo |
-| ----- | ------------------------------------------------ | ------------------------------------------- | ------------------------------------------------ | ----------- |
-| TC-01 | Ingreso usuario admin y clave admin123           | Acceso exitoso al sistema                   | Mensaje de bienvenida mostrado, acceso permitido | ✔️ Éxito    |
-| TC-02 | Ingresar admin con contraseña incorrecta 3 veces | Bloqueo tras 3 intentos, salida del sistema | Se bloqueó correctamente y se cerró el sistema   | ✔️ Éxito    |
-| TC-03 | Intentar agregar producto con SKU ya existente   | Mensaje de error por SKU duplicado          | Error: "ya existe producto con SKU"              | ✔️ Éxito    |
-| TC-04 | Agregar producto con cantidad -5                 | Error por cantidad inválida                 | Mensaje: "cantidad debe ser mayor a 0"           | ✔️ Éxito    |
-| TC-05 | Seleccionar “Generar Reportes” desde el menú     | Mostrar resumen con total, valor y agotados | Reporte mostrado correctamente en consola        | ✔️ Éxito    |
+| ID      | Entrada                                              | Resultado esperado                                   | Resultado obtenido                                    | Éxito/Fallo |
+|---------|------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|-------------|
+| TC-01   | Ingreso usuario admin y clave admin123               | Acceso exitoso al sistema                           | Mensaje de bienvenida mostrado, acceso permitido      | ✔️ Éxito    |
+| TC-02   | Ingresar admin con contraseña incorrecta 3 veces     | Bloqueo tras 3 intentos, salida del sistema         | Se bloqueó correctamente y se cerró el sistema        | ✔️ Éxito    |
+| TC-03   | Intentar agregar producto con SKU ya existente       | Mensaje de error por SKU duplicado                  | Error: "ya existe producto con SKU"                   | ✔️ Éxito    |
+| TC-04   | Agregar producto con cantidad -5                     | Error por cantidad inválida                         | Mensaje: "cantidad debe ser mayor a 0"                | ✔️ Éxito    |
+| TC-05   | Seleccionar “Generar Reportes” desde el menú         | Mostrar resumen con total, valor y agotados         | Reporte mostrado correctamente en consola             | ✔️ Éxito    |
 
-Todos los casos fueron documentados en el archivo `SimpleTestCaseSuite_S2_2025_rev1.0.xlsx`, según el formato entregado por la asignatura.
+Las pruebas fueron registradas en el Excel entregado por la asignatura (`SimpleTestCaseSuite_S2_2025_rev1.0.xlsx`), especificando: ID, entrada, resultado esperado, resultado obtenido, éxito/fallo y comentarios.
 
 **f) Verificación cruzada (Ciclo 2)**  
-Una vez finalizado el ciclo individual de pruebas por cada integrante, consolidaremos un set único de pruebas para ejecutarlas de forma cruzada. Esto nos permitirá confirmar que el sistema funciona correctamente también desde la perspectiva del otro miembro del equipo.
+Cuando ambos miembros del equipo tengamos nuestras pruebas individuales listas, realizaremos pruebas cruzadas con un set unificado. Esto nos permitirá confirmar el cumplimiento desde diferentes enfoques.
 
-**g) Plataforma Greentest.ai**  
-Planeamos también cargar los casos de prueba consolidados en [Greentest.ai](https://app.greentest.ai) para obtener retroalimentación adicional, asegurar la trazabilidad de los casos y optar a los puntos adicionales que ofrece la tarea por usar esta plataforma.
+**g) Validación externa (Greentest.ai)**  
+Planeamos registrar nuestras pruebas en [Greentest.ai](https://app.greentest.ai) para obtener retroalimentación automatizada y optar a puntos extra.
+
+---
+
+Este enfoque de **validación + verificación** nos permitió construir un sistema ajustado al problema real y técnicamente correcto, con respaldo en pruebas y trazabilidad de decisiones.
+
 
 ## Licencia
 
