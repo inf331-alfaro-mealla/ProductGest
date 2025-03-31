@@ -23,19 +23,29 @@ def autenticar():
         nombre_usuario = input("Usuario: ")
         contraseña = getpass.getpass("Contraseña: ")
 
-        if nombre_usuario == NOMBRE_ADMIN and contraseña == CONTRASEÑA_ADMIN:
-            print("\n¡Inicio de sesión exitoso! Bienvenido al Sistema de Gestión de Inventario.")
-            logging.info("Inicio de sesión exitoso.")
-            return True
-        else:
+        # Verificación de campos vacíos
+        if not nombre_usuario.strip() or not contraseña.strip():
+            print("❌ Todos los campos son obligatorios. No pueden estar vacíos.")
+            logging.warning("Intento con campos vacíos.")
             intentos += 1
-            restantes = max_intentos - intentos
-            if restantes > 0:
-                print(f"Credenciales inválidas. {restantes} intentos restantes.")
-                logging.warning(f"Intento de autenticación fallido. Intentos restantes: {restantes}")
-            else:
-                print("Número máximo de intentos de inicio de sesión excedido.")
-                logging.error("Autenticación fallida: se excedió el número máximo de intentos.")
-                return False
+            continue
 
+        if nombre_usuario != NOMBRE_ADMIN:
+            print("❌ Usuario incorrecto.")
+            logging.warning(f"Intento con nombre de usuario inválido: '{nombre_usuario}'")
+            intentos += 1
+            continue
+
+        if contraseña != CONTRASEÑA_ADMIN:
+            print("❌ Contraseña incorrecta.")
+            logging.warning("Contraseña incorrecta para el usuario admin.")
+            intentos += 1
+            continue
+
+        print("\n✅ ¡Inicio de sesión exitoso! Bienvenido al Sistema de Gestión de Inventario.")
+        logging.info("Inicio de sesión exitoso.")
+        return True
+
+    print("\n🚫 Número máximo de intentos de inicio de sesión excedido.")
+    logging.error("Autenticación fallida: se excedió el número máximo de intentos.")
     return False
