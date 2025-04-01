@@ -124,18 +124,22 @@ Para las comunicaciones, usamos **WhatsApp** durante la primera semana, y desde 
 ### División del trabajo
 
 - **Giovanni Mealla** se encargó de:
-  - Implementar la **primera versión funcional** del sistema completo en consola (versión 1.0).
+  - Planificar el tiempo, roles y desarrollo de la tarea.
+  - Implementar la **primera versión funcional v1.0** del sistema completo en consola (versión 1.0).
   - Hacer todos los **commits de desarrollo en la rama `main`**.
   - Documentar diariamente los avances y **registrar los objetivos** en el documento de Google Docs.
-  - Ejecutar el **ciclo 1 de pruebas** sobre su propia versión funcional.
-  - Redactar las secciones de **validación, verificación y pruebas** del `README.md`.
+  - Ejecutar el **ciclo 1 de pruebas** sobre su propia versión funcional (v1.0).
+  - Redactar el contenido de las secciones del `README.md`.
+  - Ejecutar el **ciclo 2 de pruebas de manera cruzada** sobre la version (v1.1 con mejor login)
+  - Guardar pruebas del ciclo 1 en **greentest.ai**
 
 - **Ignacio Alfaro** se encargó de:
   - Crear la **organización en GitHub**, la estructura inicial del repositorio y la rama `develop`.
   - Integrar el repositorio con **Slack**.
   - Trabajar en la edición del `README.md` en paralelo mientras Giovanni desarrollaba.
   - Ejecutar su propio conjunto de **pruebas del ciclo 1** y coordinar la ejecución futura de pruebas cruzadas.
-  - Subir avances al repositorio y colaborar en los últimos ajustes del proyecto.
+  - Ejecutar el **ciclo 2 de pruebas de manera cruzada**}
+  - Guardar pruebas del ciclo 1 en **greentest.ai**
 
 La planificación diaria fue clave para mantenernos coordinados, y al estar organizada por fechas, permitió que ambos pudieran avanzar incluso en horarios distintos. Además, usamos mensajes fijados en Slack para establecer tareas prioritarias y mantener claridad sobre los pendientes diarios.
 
