@@ -168,7 +168,9 @@ Este flujo de trabajo, aunque simple, fue efectivo para la magnitud del proyecto
 
 ---
 
-### 🧩 5. Capturas de GitHub y Slack
+### 🧩 5. Capturas
+
+### GitHub y Slack
 
 A continuación, dejamos evidencia visual del trabajo realizado a lo largo del proyecto, incluyendo commits, pull requests, merges y planificación diaria en Slack.
 
@@ -179,6 +181,34 @@ A continuación, dejamos evidencia visual del trabajo realizado a lo largo del p
 - [Ver imagen de pruebas ciclo 1 Giovanni Mealla](./evidencias/ciclo1giovanni.png)
 - [Ver imagen de pruebas ciclo 1 Ignacio Alfaro](./evidencias/ciclo1ignacio.png)
 - [Ver imagen de la planificacion previa al slack en google docs](./evidencias/google-doc-plan.png)
+
+### Pruebas cruzadas (Ciclo 2)
+
+Ambos integrantes del equipo ejecutaron el conjunto de pruebas diseñadas por su compañero, con el objetivo de verificar el sistema desde otra perspectiva.
+
+- Giovanni ejecutó las pruebas creadas por Ignacio (TC-06 a TC-17 del ciclo 1).
+- Ignacio ejecutó las pruebas creadas por Giovanni (TS-01 a TS-05 del ciclo 1).
+
+Los resultados fueron documentados en el Excel consolidado (`nombre_archivo_excel`), disponible en la carpeta `/tests`.
+
+#### 📁 Evidencia visual de pruebas cruzadas (Giovanni ejecutando pruebas TS)
+
+Todas las capturas de las pruebas realizadas por Giovanni en el ciclo 2 se encuentran en la carpeta `/evidencias/prueba-cruzada-de-giovanni-C2/`:
+
+| ID de prueba | Enlace a evidencia |
+|--------------|--------------------|
+| TS-01 | [TS-01.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-01.png) |
+| TS-02 | [TS-02.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-02.png) |
+| TS-03 | [TS-03.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-03.png) |
+| TS-04 | [TS-04.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-04.png) |
+| TS-05 | [TS-05.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-05.png) |
+| TS-06 | [TS-06.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-06.png) |
+| TS-07 | [TS-07.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-07.png) |
+| TS-08 | [TS-08.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-08.png) |
+| TS-09 | [TS-09.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-09.png) |
+| TS-10 | [TS-10.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-10.png) |
+| TS-11 | [TS-11.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-11.png) |
+| TS-12 | [TS-12.png](./evidencias/prueba-cruzada-de-giovanni-C2/TS-12.png) |
 
 ---
 
