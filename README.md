@@ -215,6 +215,27 @@ Todas las capturas de las pruebas realizadas por Giovanni en el ciclo 2 se encue
 
 ---
 
+#### 📁 Evidencia visual de pruebas cruzadas (Ignacio ejecutando pruebas TS)
+
+Todas las capturas de las pruebas realizadas por Giovanni en el ciclo 2 se encuentran en la carpeta `/evidencias/prueba-cruzada-de-ignacio-C2/`:
+
+| ID de prueba | Enlace a evidencia |
+|--------------|--------------------|
+| TS-01 | [TS-01.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-01.png) |
+| TS-02 | [TS-02.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-02.png) |
+| TS-03 | [TS-03.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-03.png) |
+| TS-04 | [TS-04.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-04.png) |
+| TS-05 | [TS-05.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-05.png) |
+| TS-06 | [TS-06.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-06.png) |
+| TS-07 | [TS-07.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-07.png) |
+| TS-08 | [TS-08.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-08.png) |
+| TS-09 | [TS-09.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-09.png) |
+| TS-10 | [TS-10.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-10.png) |
+| TS-11 | [TS-11.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-11.png) |
+| TS-12 | [TS-12.png](./evidencias/prueba-cruzada-de-ignacio-C2/TS-12.png) |
+
+---
+
 ### 🧩 6. Problemas encontrados y cómo se solucionaron
 
 Durante el desarrollo del proyecto, enfrentamos los siguientes desafíos:
