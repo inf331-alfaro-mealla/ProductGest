@@ -147,15 +147,16 @@ La planificación diaria fue clave para mantenernos coordinados, y al estar orga
 
 Utilizamos un **flujo simple basado en `main` y `develop`**:
 
-- `main`: rama principal donde se integró la **primera versión funcional** del programa, desarrollada por Giovanni.
+- `main`: rama principal donde se integró tanto la **primera versión funcional v1.0** como **la version V1.1 para el ciclo 2 de pruebas cruzadas** del programa, desarrollada por Giovanni.
 - `develop`: rama secundaria utilizada para trabajar colaborativamente el `README.md` y registrar evidencias como validación, verificación, pruebas y documentación.
 
-Más adelante, se creó un **pull request** desde `develop` hacia `main` para consolidar toda la documentación y los avances en un solo lugar.
+Más adelante, se crearon **pull requests** desde `develop` hacia `main` para consolidar toda la documentación y los avances en un solo lugar.
 
 ### Protección y buenas prácticas
 
 - Aunque **no se activó protección estricta de ramas** en GitHub, aplicamos buenas prácticas manuales:
-  - Toda la fase de documentación se trabajó en `develop`.
+  - La primera fase de documentación se trabajó en `develop`.
+  - La ultima fase (despues de terminar ambos ciclo de pruebas) se trabajo en la rama `main`
   - Se hizo un **pull request con revisión manual** para integrar los cambios a `main`.
   - Los commits se firmaron y acompañaron con mensajes claros.
 
