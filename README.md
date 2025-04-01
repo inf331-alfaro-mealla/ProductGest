@@ -165,7 +165,7 @@ Más adelante, se crearon **pull requests** desde `develop` hacia `main` para co
 - **Slack**: Coordinación diaria y objetivos de trabajo compartidos.
 - **Google Docs**: Planificación diaria y evidencia escrita de objetivos.
 - **GitHub**: Control de versiones, ramas y documentación del código.
-- **GreenTest.ai** *(pendiente)*: Para subir pruebas y obtener puntos adicionales.
+- **GreenTest.ai**: Para subir pruebas manuales.
 
 Este flujo de trabajo, aunque simple, fue efectivo para la magnitud del proyecto y permitió mantener una trazabilidad clara de cada avance.
 
@@ -184,6 +184,10 @@ A continuación, dejamos evidencia visual del trabajo realizado a lo largo del p
 - [Ver imagen de pruebas ciclo 1 Giovanni Mealla](./evidencias/ciclo1giovanni.png)
 - [Ver imagen de pruebas ciclo 1 Ignacio Alfaro](./evidencias/ciclo1ignacio.png)
 - [Ver imagen de la planificacion previa al slack en google docs](./evidencias/google-doc-plan.png)
+
+### Pruebas individuales (Ciclo 1)
+
+- [Ver imagen de pruebas ciclo 1 Giovanni Mealla en greentest.ai](https://docs.google.com/document/d/1MN-v2jxa6xgaRS1v-h1mIPGq8FWgicJxMVjVdhSfOEg/edit?usp=sharing)
 
 ### Pruebas cruzadas (Ciclo 2)
 
