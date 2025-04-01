@@ -117,6 +117,8 @@ Este enfoque de **validación + verificación** nos permitió construir un siste
 
 Desde el inicio del proyecto, organizamos nuestras tareas utilizando un documento colaborativo en Google Docs, donde planificamos día a día las actividades a realizar. Esta planificación comenzó el **domingo 23 de marzo** y se extendió hasta el sábado 29 de marzo, donde registramos tanto los objetivos generales como los acuerdos de equipo.
 
+- [Ir a la planififcacion previa a la integracion de Slack](https://docs.google.com/document/d/1MN-v2jxa6xgaRS1v-h1mIPGq8FWgicJxMVjVdhSfOEg/edit?usp=sharing)
+
 Para las comunicaciones, usamos **WhatsApp** durante la primera semana, y desde el **30 de marzo** migramos a un canal en **Slack** llamado `#productgest`, el cual fue vinculado con GitHub para recibir notificaciones de commits, pull requests y merges.
 
 ### División del trabajo
