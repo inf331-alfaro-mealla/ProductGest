@@ -191,7 +191,7 @@ A continuación, dejamos evidencia visual del trabajo realizado a lo largo del p
 
 ### Pruebas individuales (Ciclo 1)
 
-- [Ver imagen de pruebas ciclo 1 Giovanni Mealla en greentest.ai](https://docs.google.com/document/d/1MN-v2jxa6xgaRS1v-h1mIPGq8FWgicJxMVjVdhSfOEg/edit?usp=sharing)
+- [Ver imagen de pruebas ciclo 1 Giovanni Mealla en greentest.ai](./evidencias/greentest.ia/ciclo-1-greentest.png)
 
 ### Pruebas cruzadas (Ciclo 2)
 
