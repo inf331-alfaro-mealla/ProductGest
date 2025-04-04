@@ -182,7 +182,7 @@ Este flujo de trabajo, aunque simple, fue efectivo para la magnitud del proyecto
 A continuación, dejamos evidencia visual del trabajo realizado a lo largo del proyecto, incluyendo commits, pull requests, merges y planificación diaria en Slack.
 
 - [Ver imagen de actividad de commits](./evidencias/commits.png)
-- [Ver imagen de integración slack y github](./evidencias/inntegracion-slack-github.png)
+- [Ver imagen de integración slack y github](./evidencias/integracion-slack-github.png)
 - [Ver imagen del Pull Request de integración a main](./evidencias/pull-request.png)
 - [Ver imagen del Merge exitoso](./evidencias/merge.png)
 - [Ver imagen del canal Slack con organización diaria](./evidencias/slack.png)
