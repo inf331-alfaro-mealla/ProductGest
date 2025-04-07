@@ -201,7 +201,7 @@ Ambos integrantes del equipo ejecutaron el conjunto de pruebas diseñadas por su
 - Giovanni ejecutó las pruebas creadas por Ignacio (TC-06 a TC-17 del ciclo 1).
 - Ignacio ejecutó las pruebas creadas por Giovanni (TS-01 a TS-05 del ciclo 1).
 
-Los resultados fueron documentados en el Excel consolidado (`nombre_archivo_excel`), disponible en la carpeta `/tests`.
+Los resultados fueron documentados en el Excel consolidado (`SimpleTestCaseSuite_S2_2025_rev1.0.xlsx`), disponible en la carpeta `/excel`.
 
 #### 📁 Evidencia visual de pruebas cruzadas (Giovanni ejecutando pruebas TS)
 
