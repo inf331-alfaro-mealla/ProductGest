@@ -8,15 +8,11 @@ ProductGest es una aplicación sencilla para la gestión de inventarios, diseña
 
 1. Clona este repositorio:
    ```
-   git clone https://github.com/tu-usuario/productgest.git
+   git clone https://github.com/inf331-alfaro-mealla/ProductGest.git
    ```
 2. Navega al directorio del proyecto:
    ```
-   cd productgest
-   ```
-3. Instala las dependencias requeridas (Python o Java, según el caso). Para Python, usa:
-   ```
-   pip install -r requirements.txt
+   cd Productgest
    ```
 
 ## Cómo usar
@@ -24,6 +20,7 @@ ProductGest es una aplicación sencilla para la gestión de inventarios, diseña
 1. Inicia la aplicación:
    - Para Python:
      ```
+     cd codes
      python main.py
      ```
 2. Inicia sesión utilizando tu nombre de usuario (admin) y contraseña (admin123) registrados.
